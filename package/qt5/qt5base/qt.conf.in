@@ -2,6 +2,6 @@
 Prefix=/usr
 HostPrefix=@@HOST_DIR@@
 Sysroot=@@STAGING_DIR@@
-Headers=@@STAGING_DIR@@/usr/include/qt5
+Headers=/usr/include/qt5
 Plugins=@@STAGING_DIR@@/usr/lib/qt/plugins
 Examples=/usr/lib/qt/examples
