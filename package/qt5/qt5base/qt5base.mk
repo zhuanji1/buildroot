@@ -27,9 +27,13 @@ QT5BASE_CONFIGURE_OPTS += \
 	-system-zlib \
 	-system-pcre \
 	-no-pch \
-	-shared \
 	-no-feature-relocatable
 
+ifeq ($(BR2_STATIC_LIBS),y)
+  QT5BASE_CONFIGURE_OPTS += -static 
+else
+  QT5BASE_CONFIGURE_OPTS += -shared
+endif
 # starting from version 5.9.0, -optimize-debug is enabled by default
 # for debug builds and it overrides -O* with -Og which is not what we
 # want.

@@ -15,5 +15,11 @@ XLIB_LIBXDMCP_INSTALL_STAGING = YES
 XLIB_LIBXDMCP_DEPENDENCIES = xutil_util-macros xorgproto host-pkgconf
 HOST_XLIB_LIBXDMCP_DEPENDENCIES = host-xutil_util-macros host-xorgproto host-pkgconf
 
+define XLIB_LIBXDMCP_POST_PATCH_FIXUP
+       $(SED) 's%-lXdmcp%-lXdmcp -pthread%' $(STAGING_DIR)/usr/lib/pkgconfig/xdmcp.pc
+endef
+
+XLIB_LIBXDMCP_POST_INSTALL_STAGING_HOOKS += XLIB_LIBXDMCP_POST_PATCH_FIXUP
+
 $(eval $(autotools-package))
 $(eval $(host-autotools-package))
