@@ -1,0 +1,13 @@
+diff --git a/src/runtime/plugins/xcb/CMakeLists.txt b/src/runtime/plugins/xcb/CMakeLists.txt
+index 45bf4dc..49bbef6 100644
+--- a/src/runtime/plugins/xcb/CMakeLists.txt
++++ b/src/runtime/plugins/xcb/CMakeLists.txt
+@@ -3,7 +3,7 @@ set(xcb_plugin_SRCS
+     ../../logging.cpp
+ )
+ 
+-add_library(KF5GlobalAccelPrivateXcb MODULE ${xcb_plugin_SRCS})
++add_library(KF5GlobalAccelPrivateXcb STATIC ${xcb_plugin_SRCS})
+ target_link_libraries(KF5GlobalAccelPrivateXcb
+     KF5GlobalAccelPrivate
+     XCB::XCB

@@ -1,6 +1,9 @@
 config BR2_PACKAGE_KF5_KXMLGUI
 	bool "kf5-kxmlgui"
 	select BR2_PACKAGE_KF5_EXTRA_CMAKE_MODULES
+	select BR2_PACKAGE_KF5_KTEXTWIDGETS
+	select BR2_PACKAGE_KF5_KGLOBALACCEL
+	select BR2_PACKAGE_LIBOPENSSL
 	help
 	  KF5 is a set of Qt framework addons, extending Qt in
 	  various ways, not only restricted in helping integration

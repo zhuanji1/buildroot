@@ -1,6 +1,9 @@
 config BR2_PACKAGE_KF5_KWINDOWSYSTEM
 	bool "kf5-kwindowsystem"
 	select BR2_PACKAGE_KF5_EXTRA_CMAKE_MODULES
+	select BR2_PACKAGE_QT5X11EXTRAS
+	select BR2_PACKAGE_XLIB_LIBXRENDER
+	select BR2_PACKAGE_XLIB_LIBXFIXES
 	help
 	  KF5 is a set of Qt framework addons, extending Qt in
 	  various ways, not only restricted in helping integration

@@ -1,0 +1,26 @@
+diff --git a/src/libudev/Makefile.am b/src/libudev/Makefile.am
+index d069956..6136c2b 100644
+--- a/src/libudev/Makefile.am
++++ b/src/libudev/Makefile.am
+@@ -70,7 +70,7 @@ CLEANFILES = \
+ 	libudev.pc
+ 
+ install-exec-hook:
+-	libname=libudev.so; if test "$(libdir)" != "$(rootlibdir)"; then \
++	libname=libudev.so; if test "$(libdir)" == "$(rootlibdir)"; then \
+ 		$(MKDIR_P) $(DESTDIR)$(rootlibdir) && \
+ 		so_img_name=$$(readlink $(DESTDIR)$(libdir)/$$libname) && \
+ 		so_img_rel_target_prefix=$$(echo $(libdir) | sed 's,\(^/\)\?[^/]\+,..,g') && \
+diff --git a/src/libudev/Makefile.in b/src/libudev/Makefile.in
+index 653f865..35e0367 100644
+--- a/src/libudev/Makefile.in
++++ b/src/libudev/Makefile.in
+@@ -1036,7 +1036,7 @@ uninstall-am: uninstall-includeHEADERS uninstall-libLTLIBRARIES \
+ 
+ 
+ install-exec-hook:
+-	libname=libudev.so; if test "$(libdir)" != "$(rootlibdir)"; then \
++	libname=libudev.so; if test "$(libdir)" == "$(rootlibdir)"; then \
+ 		$(MKDIR_P) $(DESTDIR)$(rootlibdir) && \
+ 		so_img_name=$$(readlink $(DESTDIR)$(libdir)/$$libname) && \
+ 		so_img_rel_target_prefix=$$(echo $(libdir) | sed 's,\(^/\)\?[^/]\+,..,g') && \

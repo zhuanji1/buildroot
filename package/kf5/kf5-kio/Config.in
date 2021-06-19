@@ -1,6 +1,8 @@
 config BR2_PACKAGE_KF5_KIO
 	bool "kf5-kio"
 	select BR2_PACKAGE_KF5_EXTRA_CMAKE_MODULES
+	select BR2_PACKAGE_KF5_SOLID
+	select BR2_PACKAGE_KF5_KJOBWIDGETS
 	help
 	  KF5 is a set of Qt framework addons, extending Qt in
 	  various ways, not only restricted in helping integration

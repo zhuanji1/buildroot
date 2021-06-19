@@ -1,0 +1,13 @@
+diff --git a/src/kbuildsycoca/CMakeLists.txt b/src/kbuildsycoca/CMakeLists.txt
+index 6e168b4..1998a7c 100644
+--- a/src/kbuildsycoca/CMakeLists.txt
++++ b/src/kbuildsycoca/CMakeLists.txt
+@@ -16,6 +16,8 @@ target_link_libraries(kbuildsycoca5
+    KF5::CoreAddons # KAboutData
+    KF5::I18n
+    Qt5::Xml
++   X11
++   xcb
+ )
+ 
+ install(TARGETS kbuildsycoca5 ${KF5_INSTALL_TARGETS_DEFAULT_ARGS} )

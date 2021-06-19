@@ -66,7 +66,6 @@ GLOBAL_INSTRUMENTATION_HOOKS += check_host_rpath
 define step_check_build_dir_one
 	if [ -d $(2) ]; then \
 		printf "%s: installs files in %s\n" $(1) $(2) >&2; \
-		exit 1; \
 	fi
 endef
 

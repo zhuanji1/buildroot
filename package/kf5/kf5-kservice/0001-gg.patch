@@ -1,0 +1,31 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 95cf429..73a4830 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -5,10 +5,6 @@ set(KF5_VERSION "5.49.0") # handled by release scripts
+ set(KF5_DEP_VERSION "5.49.0") # handled by release scripts
+ project(KService VERSION ${KF5_VERSION})
+ 
+-# Disallow in-source build
+-if("${CMAKE_SOURCE_DIR}" STREQUAL "${CMAKE_BINARY_DIR}")
+-   message(FATAL_ERROR "KService requires an out of source build. Please create a separate build directory and run 'cmake path_to_kservice [options]' there.")
+-endif()
+ 
+ # ECM setup
+ include(FeatureSummary)
+@@ -41,13 +37,14 @@ set(APPLICATIONS_MENU_NAME applications.menu
+ 
+ # Dependencies
+ set(REQUIRED_QT_VERSION 5.8.0)
+-find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus Xml)
++find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED DBus Xml X11Extras)
+ 
+ find_package(KF5Config ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5CoreAddons ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5Crash ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5DBusAddons ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5I18n ${KF5_DEP_VERSION} REQUIRED)
++find_package(KF5WindowSystem ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5DocTools ${KF5_DEP_VERSION})
+ 
+ find_package(FLEX REQUIRED)

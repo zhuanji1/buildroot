@@ -1,0 +1,40 @@
+diff --git a/configure b/configure
+index 38db1dd..46f3c75 100755
+--- a/configure
++++ b/configure
+@@ -22557,7 +22557,7 @@ if test "$ac_x_libraries" = no; then
+   # See if we find them without any special options.
+   # Don't add to $LIBS permanently.
+   ac_save_LIBS=$LIBS
+-  LIBS="-lX11 $LIBS"
++  LIBS="-lX11 -lxcb -lXau -lXdmcp $LIBS"
+   cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ #include <X11/Xlib.h>
+@@ -22699,7 +22699,7 @@ rm -f core conftest.err conftest.$ac_objext \
+     # Martyn Johnson says this is needed for Ultrix, if the X
+     # libraries were built with DECnet support.  And Karl Berry says
+     # the Alpha needs dnet_stub (dnet does not exist).
+-    ac_xsave_LIBS="$LIBS"; LIBS="$LIBS $X_LIBS -lX11"
++    ac_xsave_LIBS="$LIBS"; LIBS="$LIBS $X_LIBS -lX11 -lxcb -lXau -lXdmcp"
+     cat confdefs.h - <<_ACEOF >conftest.$ac_ext
+ /* end confdefs.h.  */
+ 
+@@ -23066,7 +23066,7 @@ fi
+   # SM needs ICE to (dynamically) link under SunOS 4.x (so we have to
+   # check for ICE first), but we must link in the order -lSM -lICE or
+   # we get undefined symbols.  So assume we have SM if we have ICE.
+-  # These have to be linked with before -lX11, unlike the other
++  # These have to be linked with before -lX11 -lxcb -lXau -lXdmcp, unlike the other
+   # libraries we check for below, so use a different variable.
+   # John Interrante, Karl Berry
+   { $as_echo "$as_me:${as_lineno-$LINENO}: checking for IceConnectionNumber in -lICE" >&5
+@@ -23118,7 +23118,7 @@ fi
+         have_x11=no
+     else
+         have_x11=yes
+-        DBUS_X_LIBS="$X_LIBS $X_PRE_LIBS -lX11 $X_EXTRA_LIBS"
++        DBUS_X_LIBS="$X_LIBS $X_PRE_LIBS -lX11 -lxcb -lXau -lXdmcp $X_EXTRA_LIBS"
+         DBUS_X_CFLAGS="$X_CFLAGS"
+     fi
+ fi

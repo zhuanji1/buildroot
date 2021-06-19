@@ -1,0 +1,20 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index 493860a..b2939fd 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -70,11 +70,11 @@ set(ktranscript_LIB_SRCS
+     ktranscript.cpp
+     common_helpers.cpp
+ )
+-add_library(ktranscript MODULE ${ktranscript_LIB_SRCS})
+-generate_export_header(ktranscript BASE_NAME KTranscript)
+-target_link_libraries(ktranscript PRIVATE Qt5::Script Qt5::Core)
++#add_library(ktranscript MODULE ${ktranscript_LIB_SRCS})
++#generate_export_header(ktranscript BASE_NAME KTranscript)
++#target_link_libraries(ktranscript PRIVATE Qt5::Script Qt5::Core)
+ 
+-install(TARGETS ktranscript DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5)
++#install(TARGETS ktranscript DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5)
+ 
+ endif()
+ 

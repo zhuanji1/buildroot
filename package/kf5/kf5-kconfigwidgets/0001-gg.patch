@@ -1,0 +1,1224 @@
+diff --git a/CMakeCache.txt b/CMakeCache.txt
+index f6735c1..f2d9401 100644
+--- a/CMakeCache.txt
++++ b/CMakeCache.txt
+@@ -14,12 +14,6 @@
+ # EXTERNAL cache entries
+ ########################
+ 
+-//Path to a program.
+-APPSTREAMCLI:FILEPATH=APPSTREAMCLI-NOTFOUND
+-
+-//Build the project with gcov support
+-BUILD_COVERAGE:BOOL=OFF
+-
+ //No help, variable specified on the command line.
+ BUILD_DOC:UNINITIALIZED=OFF
+ 
+@@ -38,19 +32,14 @@ BUILD_HTML_DOCS:UNINITIALIZED=OFF
+ //No help, variable specified on the command line.
+ BUILD_MAN_DOCS:UNINITIALIZED=OFF
+ 
+-//Build API documentation in QCH format (for e.g. Qt Assistant,
+-// Qt Creator & KDevelop)
+-BUILD_QCH:BOOL=OFF
+-
+-//If enabled, shared libs will be built by default, otherwise static
+-// libs
+-BUILD_SHARED_LIBS:BOOL=OFF
++//No help, variable specified on the command line.
++BUILD_SHARED_LIBS:UNINITIALIZED=OFF
+ 
+ //No help, variable specified on the command line.
+ BUILD_TEST:UNINITIALIZED=OFF
+ 
+-//Build the testing tree.
+-BUILD_TESTING:BOOL=OFF
++//No help, variable specified on the command line.
++BUILD_TESTING:UNINITIALIZED=OFF
+ 
+ //No help, variable specified on the command line.
+ BUILD_TESTS:UNINITIALIZED=OFF
+@@ -262,228 +251,12 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
+ //The directory containing a CMake configuration file for ECM.
+ ECM_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/cmake
+ 
+-//The directory where mkspecs will be installed to.
+-ECM_MKSPECS_INSTALL_DIR:PATH=mkspecs/modules
+-
+-//Path to a program.
+-GETTEXT_MSGFMT_EXECUTABLE:FILEPATH=/run/media/pqy/sda1/br/kf5/host/bin/msgfmt
+-
+-//Path to a program.
+-GETTEXT_MSGMERGE_EXECUTABLE:FILEPATH=/run/media/pqy/sda1/br/kf5/host/bin/msgmerge
+-
+-//Path to a program.
+-GPB_PYTHON2_COMMAND:FILEPATH=GPB_PYTHON2_COMMAND-NOTFOUND
+-
+-//Path to a library.
+-GPB_PYTHON2_LIBRARY:FILEPATH=GPB_PYTHON2_LIBRARY-NOTFOUND
+-
+-//Path to a program.
+-GPB_PYTHON3_COMMAND:FILEPATH=/run/media/pqy/sda1/br/kf5/host/bin/python3
+-
+-//Path to a library.
+-GPB_PYTHON3_LIBRARY:FILEPATH=GPB_PYTHON3_LIBRARY-NOTFOUND
+-
+ //Value Computed by CMake
+ KConfigWidgets_BINARY_DIR:STATIC=/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0
+ 
+ //Value Computed by CMake
+ KConfigWidgets_SOURCE_DIR:STATIC=/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0
+ 
+-//application desktop files (DATAROOTDIR/applications)
+-KDE_INSTALL_APPDIR:PATH=
+-
+-//autostart files (CONFDIR/autostart)
+-KDE_INSTALL_AUTOSTARTDIR:PATH=
+-
+-//user executables (EXECROOTDIR/bin)
+-KDE_INSTALL_BINDIR:PATH=
+-
+-//CMake packages, including config files (LIBDIR/cmake)
+-KDE_INSTALL_CMAKEPACKAGEDIR:PATH=
+-
+-//application configuration files (SYSCONFDIR/xdg)
+-KDE_INSTALL_CONFDIR:PATH=
+-
+-//read-only architecture-independent data (DATAROOTDIR)
+-KDE_INSTALL_DATADIR:PATH=
+-
+-//read-only architecture-independent data root (share)
+-KDE_INSTALL_DATAROOTDIR:PATH=
+-
+-//D-Bus (DATAROOTDIR/dbus-1)
+-KDE_INSTALL_DBUSDIR:PATH=
+-
+-//D-Bus interfaces (DBUSDIR/interfaces)
+-KDE_INSTALL_DBUSINTERFACEDIR:PATH=
+-
+-//D-Bus session services (DBUSDIR/services)
+-KDE_INSTALL_DBUSSERVICEDIR:PATH=
+-
+-//D-Bus system services (DBUSDIR/system-services)
+-KDE_INSTALL_DBUSSYSTEMSERVICEDIR:PATH=
+-
+-//desktop directories (DATAROOTDIR/desktop-directories)
+-KDE_INSTALL_DESKTOPDIR:PATH=
+-
+-//documentation bundles generated using kdoctools (DATAROOTDIR/doc/HTML)
+-KDE_INSTALL_DOCBUNDLEDIR:PATH=
+-
+-//executables and libraries ()
+-KDE_INSTALL_EXECROOTDIR:PATH=
+-
+-//icons (DATAROOTDIR/icons)
+-KDE_INSTALL_ICONDIR:PATH=
+-
+-//C and C++ header files (include)
+-KDE_INSTALL_INCLUDEDIR:PATH=
+-
+-//info documentation (DATAROOTDIR/info)
+-KDE_INSTALL_INFODIR:PATH=
+-
+-//Java AAR/JAR files for Android (jar)
+-KDE_INSTALL_JARDIR:PATH=
+-
+-//KAppTemplate and KDevelop templates (DATAROOTDIR/kdevappwizard/templates)
+-KDE_INSTALL_KAPPTEMPLATESDIR:PATH=
+-
+-//kconfig description files (DATAROOTDIR/config.kcfg)
+-KDE_INSTALL_KCFGDIR:PATH=
+-
+-//kconf_update scripts (DATAROOTDIR/kconf_update)
+-KDE_INSTALL_KCONFUPDATEDIR:PATH=
+-
+-//KDevelop file templates (DATAROOTDIR/kdevfiletemplates/templates)
+-KDE_INSTALL_KFILETEMPLATESDIR:PATH=
+-
+-//knotify description files (DATAROOTDIR/knotifications5)
+-KDE_INSTALL_KNOTIFY5RCDIR:PATH=
+-
+-//services for KDE Frameworks 5 (DATAROOTDIR/kservices5)
+-KDE_INSTALL_KSERVICES5DIR:PATH=
+-
+-//service types for KDE Frameworks 5 (DATAROOTDIR/kservicetypes5)
+-KDE_INSTALL_KSERVICETYPES5DIR:PATH=
+-
+-//kxmlgui .rc files (DATAROOTDIR/kxmlgui5)
+-KDE_INSTALL_KXMLGUI5DIR:PATH=
+-
+-//object code libraries (EXECROOTDIR/lib)
+-KDE_INSTALL_LIBDIR:PATH=
+-
+-//executables for internal use by programs and libraries (LIBDIR/libexec)
+-KDE_INSTALL_LIBEXECDIR:PATH=
+-
+-//knotify description files (DATAROOTDIR/locale)
+-KDE_INSTALL_LOCALEDIR:PATH=
+-
+-//modifiable single-machine data (var)
+-KDE_INSTALL_LOCALSTATEDIR:PATH=
+-
+-//Qt Logging categories files (DATAROOTDIR/qlogging-categories5)
+-KDE_INSTALL_LOGGINGCATEGORIESDIR:PATH=
+-
+-//man documentation (DATAROOTDIR/man)
+-KDE_INSTALL_MANDIR:PATH=
+-
+-//AppStream component metadata (DATAROOTDIR/metainfo)
+-KDE_INSTALL_METAINFODIR:PATH=
+-
+-//mime description files (DATAROOTDIR/mime/packages)
+-KDE_INSTALL_MIMEDIR:PATH=
+-
+-//Plugins (QTPLUGINDIR)
+-KDE_INSTALL_PLUGINDIR:PATH=
+-
+-//Installs /usr/prefix.sh that sets up the necessary environment
+-// variables
+-KDE_INSTALL_PREFIX_SCRIPT:BOOL=OFF
+-
+-//documentation bundles in QCH format (DATAROOTDIR/doc/qch)
+-KDE_INSTALL_QCHDIR:PATH=
+-
+-//QtQuick2 imports (LIBDIR/qml)
+-KDE_INSTALL_QMLDIR:PATH=
+-
+-//Qt plugins (LIBDIR/plugins)
+-KDE_INSTALL_QTPLUGINDIR:PATH=
+-
+-//documentation bundles in QCH format for Qt-extending libraries
+-// (DATAROOTDIR/doc/qch)
+-KDE_INSTALL_QTQCHDIR:PATH=
+-
+-//QtQuick1 imports (QTPLUGINDIR/imports)
+-KDE_INSTALL_QTQUICKIMPORTSDIR:PATH=
+-
+-//system admin executables (EXECROOTDIR/sbin)
+-KDE_INSTALL_SBINDIR:PATH=
+-
+-//modifiable architecture-independent data (com)
+-KDE_INSTALL_SHAREDSTATEDIR:PATH=
+-
+-//sound files (DATAROOTDIR/sounds)
+-KDE_INSTALL_SOUNDDIR:PATH=
+-
+-//read-only single-machine data (/etc)
+-KDE_INSTALL_SYSCONFDIR:PATH=
+-
+-//Systemd units (CMAKE_INSTALL_PREFIX/lib/systemd)
+-KDE_INSTALL_SYSTEMDUNITDIR:PATH=
+-
+-//Systemd user units (SYSTEMDUNITDIR/user)
+-KDE_INSTALL_SYSTEMDUSERUNITDIR:PATH=
+-
+-//templates (DATAROOTDIR/templates)
+-KDE_INSTALL_TEMPLATEDIR:PATH=
+-
+-//Install Python2 bindings to the Python2 install dir
+-KDE_INSTALL_USE_PYTHON2_SYS_PATHS:BOOL=OFF
+-
+-//Install Python3 bindings to the Python3 install dir
+-KDE_INSTALL_USE_PYTHON3_SYS_PATHS:BOOL=OFF
+-
+-//Install mkspecs files, QCH files for Qt-based libs, Plugins and
+-// Imports to the Qt 5 install dir
+-KDE_INSTALL_USE_QT_SYS_PATHS:BOOL=OFF
+-
+-//desktop wallpaper images (DATAROOTDIR/wallpapers)
+-KDE_INSTALL_WALLPAPERDIR:PATH=
+-
+-//Prevent an "uninstall" target from being generated.
+-KDE_SKIP_UNINSTALL_TARGET:BOOL=OFF
+-
+-//The directory containing a CMake configuration file for KF5Auth.
+-KF5Auth_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Auth
+-
+-//The directory containing a CMake configuration file for KF5Codecs.
+-KF5Codecs_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Codecs
+-
+-//Dependencies for the target
+-KF5ConfigWidgets_LIB_DEPENDS:STATIC=general;KF5::Codecs;general;KF5::WidgetsAddons;general;KF5::ConfigGui;general;KF5::Auth;general;Qt5::DBus;general;KF5::CoreAddons;general;KF5::GuiAddons;general;KF5::I18n;
+-
+-//The directory containing a CMake configuration file for KF5Config.
+-KF5Config_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config
+-
+-//The directory containing a CMake configuration file for KF5CoreAddons.
+-KF5CoreAddons_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons
+-
+-//The directory containing a CMake configuration file for KF5DocTools.
+-KF5DocTools_DIR:PATH=KF5DocTools_DIR-NOTFOUND
+-
+-//The directory containing a CMake configuration file for KF5GuiAddons.
+-KF5GuiAddons_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5GuiAddons
+-
+-//The directory containing a CMake configuration file for KF5I18n.
+-KF5I18n_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5I18n
+-
+-//The directory containing a CMake configuration file for KF5WidgetsAddons.
+-KF5WidgetsAddons_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5WidgetsAddons
+-
+-//Path to a program.
+-KI18N_PYTHON_EXECUTABLE:FILEPATH=/run/media/pqy/sda1/br/kf5/host/bin/python3
+-
+-//Location of the Qt5 qmake executable
+-QMAKE_EXECUTABLE:FILEPATH=/run/media/pqy/sda1/br/kf5/host/bin/qmake
+-
+ //The directory containing a CMake configuration file for Qt5Core.
+ Qt5Core_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Core
+ 
+@@ -526,15 +299,15 @@ Qt5ThemeSupport_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-
+ //The directory containing a CMake configuration file for Qt5Widgets.
+ Qt5Widgets_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Widgets
+ 
++//The directory containing a CMake configuration file for Qt5X11Extra.
++Qt5X11Extra_DIR:PATH=Qt5X11Extra_DIR-NOTFOUND
++
+ //The directory containing a CMake configuration file for Qt5XcbQpa.
+ Qt5XcbQpa_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5XcbQpa
+ 
+ //The directory containing a CMake configuration file for Qt5XkbCommonSupport.
+ Qt5XkbCommonSupport_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5XkbCommonSupport
+ 
+-//The directory containing a CMake configuration file for Qt5Xml.
+-Qt5Xml_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Xml
+-
+ //The directory containing a CMake configuration file for Qt5.
+ Qt5_DIR:PATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5
+ 
+@@ -1030,24 +803,6 @@ _Qt5XkbCommonSupport_RELEASE_xkbcommon_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/
+ //Path to a library.
+ _Qt5XkbCommonSupport_RELEASE_z_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/libz.a
+ 
+-//Path to a library.
+-_Qt5Xml_RELEASE_atomic_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64/libatomic.a
+-
+-//Path to a library.
+-_Qt5Xml_RELEASE_dl_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64/libdl.a
+-
+-//Path to a library.
+-_Qt5Xml_RELEASE_m_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64/libm.a
+-
+-//Path to a library.
+-_Qt5Xml_RELEASE_pcre2-16_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/libpcre2-16.a
+-
+-//Path to a library.
+-_Qt5Xml_RELEASE_rt_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64/librt.a
+-
+-//Path to a library.
+-_Qt5Xml_RELEASE_z_PATH:FILEPATH=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib64/libz.a
+-
+ 
+ ########################
+ # INTERNAL cache entries
+@@ -1155,7 +910,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
+ //ADVANCED property for variable: CMAKE_NM
+ CMAKE_NM-ADVANCED:INTERNAL=1
+ //number of local generators
+-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=2
++CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=1
+ //ADVANCED property for variable: CMAKE_OBJCOPY
+ CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
+ //ADVANCED property for variable: CMAKE_OBJDUMP
+@@ -1198,120 +953,8 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
+ CMAKE_UNAME:INTERNAL=/usr/bin/uname
+ //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
+ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+-//Compiler support for a deprecated attribute
+-COMPILER_HAS_DEPRECATED:INTERNAL=1
+-//Test COMPILER_HAS_DEPRECATED_ATTR
+-COMPILER_HAS_DEPRECATED_ATTR:INTERNAL=1
+-//Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY
+-COMPILER_HAS_HIDDEN_INLINE_VISIBILITY:INTERNAL=1
+-//Test COMPILER_HAS_HIDDEN_VISIBILITY
+-COMPILER_HAS_HIDDEN_VISIBILITY:INTERNAL=1
+-//Details about finding Gettext
+-FIND_PACKAGE_MESSAGE_DETAILS_Gettext:INTERNAL=[/run/media/pqy/sda1/br/kf5/host/bin/msgmerge][/run/media/pqy/sda1/br/kf5/host/bin/msgfmt][v99.9999.9999()]
+ //Details about finding Threads
+ FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+-//Test HAVE_DATE_TIME
+-HAVE_DATE_TIME:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_APPDIR
+-KDE_INSTALL_APPDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_AUTOSTARTDIR
+-KDE_INSTALL_AUTOSTARTDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_BINDIR
+-KDE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_CMAKEPACKAGEDIR
+-KDE_INSTALL_CMAKEPACKAGEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_CONFDIR
+-KDE_INSTALL_CONFDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DATADIR
+-KDE_INSTALL_DATADIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DATAROOTDIR
+-KDE_INSTALL_DATAROOTDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DBUSDIR
+-KDE_INSTALL_DBUSDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DBUSINTERFACEDIR
+-KDE_INSTALL_DBUSINTERFACEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DBUSSERVICEDIR
+-KDE_INSTALL_DBUSSERVICEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DBUSSYSTEMSERVICEDIR
+-KDE_INSTALL_DBUSSYSTEMSERVICEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DESKTOPDIR
+-KDE_INSTALL_DESKTOPDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_DOCBUNDLEDIR
+-KDE_INSTALL_DOCBUNDLEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_EXECROOTDIR
+-KDE_INSTALL_EXECROOTDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_ICONDIR
+-KDE_INSTALL_ICONDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_INCLUDEDIR
+-KDE_INSTALL_INCLUDEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_INFODIR
+-KDE_INSTALL_INFODIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_JARDIR
+-KDE_INSTALL_JARDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KAPPTEMPLATESDIR
+-KDE_INSTALL_KAPPTEMPLATESDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KCFGDIR
+-KDE_INSTALL_KCFGDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KCONFUPDATEDIR
+-KDE_INSTALL_KCONFUPDATEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KFILETEMPLATESDIR
+-KDE_INSTALL_KFILETEMPLATESDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KNOTIFY5RCDIR
+-KDE_INSTALL_KNOTIFY5RCDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KSERVICES5DIR
+-KDE_INSTALL_KSERVICES5DIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KSERVICETYPES5DIR
+-KDE_INSTALL_KSERVICETYPES5DIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_KXMLGUI5DIR
+-KDE_INSTALL_KXMLGUI5DIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_LIBDIR
+-KDE_INSTALL_LIBDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_LIBEXECDIR
+-KDE_INSTALL_LIBEXECDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_LOCALEDIR
+-KDE_INSTALL_LOCALEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_LOCALSTATEDIR
+-KDE_INSTALL_LOCALSTATEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_LOGGINGCATEGORIESDIR
+-KDE_INSTALL_LOGGINGCATEGORIESDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_MANDIR
+-KDE_INSTALL_MANDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_METAINFODIR
+-KDE_INSTALL_METAINFODIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_MIMEDIR
+-KDE_INSTALL_MIMEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_PLUGINDIR
+-KDE_INSTALL_PLUGINDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_QCHDIR
+-KDE_INSTALL_QCHDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_QMLDIR
+-KDE_INSTALL_QMLDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_QTPLUGINDIR
+-KDE_INSTALL_QTPLUGINDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_QTQCHDIR
+-KDE_INSTALL_QTQCHDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_QTQUICKIMPORTSDIR
+-KDE_INSTALL_QTQUICKIMPORTSDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_SBINDIR
+-KDE_INSTALL_SBINDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_SHAREDSTATEDIR
+-KDE_INSTALL_SHAREDSTATEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_SOUNDDIR
+-KDE_INSTALL_SOUNDDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_SYSCONFDIR
+-KDE_INSTALL_SYSCONFDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_SYSTEMDUNITDIR
+-KDE_INSTALL_SYSTEMDUNITDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_SYSTEMDUSERUNITDIR
+-KDE_INSTALL_SYSTEMDUSERUNITDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_TEMPLATEDIR
+-KDE_INSTALL_TEMPLATEDIR-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: KDE_INSTALL_WALLPAPERDIR
+-KDE_INSTALL_WALLPAPERDIR-ADVANCED:INTERNAL=1
+-//Have symbol __GLIBC__
+-LIBC_IS_GLIBC:INTERNAL=
+-//Test _OFFT_IS_64BIT
+-_OFFT_IS_64BIT:INTERNAL=1
+ //ADVANCED property for variable: _Qt5Core_RELEASE_atomic_PATH
+ _Qt5Core_RELEASE_atomic_PATH-ADVANCED:INTERNAL=1
+ //ADVANCED property for variable: _Qt5Core_RELEASE_dl_PATH
+@@ -1640,16 +1283,4 @@ _Qt5XkbCommonSupport_RELEASE_rt_PATH-ADVANCED:INTERNAL=1
+ _Qt5XkbCommonSupport_RELEASE_xkbcommon_PATH-ADVANCED:INTERNAL=1
+ //ADVANCED property for variable: _Qt5XkbCommonSupport_RELEASE_z_PATH
+ _Qt5XkbCommonSupport_RELEASE_z_PATH-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: _Qt5Xml_RELEASE_atomic_PATH
+-_Qt5Xml_RELEASE_atomic_PATH-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: _Qt5Xml_RELEASE_dl_PATH
+-_Qt5Xml_RELEASE_dl_PATH-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: _Qt5Xml_RELEASE_m_PATH
+-_Qt5Xml_RELEASE_m_PATH-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: _Qt5Xml_RELEASE_pcre2-16_PATH
+-_Qt5Xml_RELEASE_pcre2-16_PATH-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: _Qt5Xml_RELEASE_rt_PATH
+-_Qt5Xml_RELEASE_rt_PATH-ADVANCED:INTERNAL=1
+-//ADVANCED property for variable: _Qt5Xml_RELEASE_z_PATH
+-_Qt5Xml_RELEASE_z_PATH-ADVANCED:INTERNAL=1
+ 
+diff --git a/CMakeFiles/CMakeDirectoryInformation.cmake b/CMakeFiles/CMakeDirectoryInformation.cmake
+deleted file mode 100644
+index 59bf42d..0000000
+--- a/CMakeFiles/CMakeDirectoryInformation.cmake
++++ /dev/null
+@@ -1,16 +0,0 @@
+-# CMAKE generated file: DO NOT EDIT!
+-# Generated by "Unix Makefiles" Generator, CMake Version 3.20
+-
+-# Relative path conversion top directories.
+-set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0")
+-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0")
+-
+-# Force unix paths in dependencies.
+-set(CMAKE_FORCE_UNIX_PATHS 1)
+-
+-
+-# The C and CXX include file regular expressions for this directory.
+-set(CMAKE_C_INCLUDE_REGEX_SCAN "^.*$")
+-set(CMAKE_C_INCLUDE_REGEX_COMPLAIN "^$")
+-set(CMAKE_CXX_INCLUDE_REGEX_SCAN ${CMAKE_C_INCLUDE_REGEX_SCAN})
+-set(CMAKE_CXX_INCLUDE_REGEX_COMPLAIN ${CMAKE_C_INCLUDE_REGEX_COMPLAIN})
+diff --git a/CMakeFiles/CMakeOutput.log b/CMakeFiles/CMakeOutput.log
+index dddd101..b1ba3fe 100644
+--- a/CMakeFiles/CMakeOutput.log
++++ b/CMakeFiles/CMakeOutput.log
+@@ -527,3 +527,430 @@ gmake[2]: 离开目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.4
+ Source file was:
+ __attribute__((__deprecated__)) int somefunc() { return 0; }
+     int main() { return somefunc();}
++The target system is: Buildroot - 1 - x86_64
++The host system is: Linux - 5.11.10 - x86_64
++Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
++Compiler: /run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc 
++Build flags: -D_LARGEFILE_SOURCE;-D_LARGEFILE64_SOURCE;-D_FILE_OFFSET_BITS=64;-Os;-static
++Id flags:  
++
++The output was:
++0
++
++
++Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
++
++The C compiler identification is GNU, found in "/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/3.20.0/CompilerIdC/a.out"
++
++Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
++Compiler: /run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++ 
++Build flags: -D_LARGEFILE_SOURCE;-D_LARGEFILE64_SOURCE;-D_FILE_OFFSET_BITS=64;;-Os;;;-static;-static;-latomic
++Id flags:  
++
++The output was:
++0
++
++
++Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
++
++The CXX compiler identification is GNU, found in "/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/3.20.0/CompilerIdCXX/a.out"
++
++Detecting C compiler ABI info compiled with the following output:
++Change Dir: /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp
++
++Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cce65/fast && gmake[2]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++/usr/bin/gmake  -f CMakeFiles/cmTC_cce65.dir/build.make CMakeFiles/cmTC_cce65.dir/build
++gmake[3]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++Building C object CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG   -v -o CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
++Using built-in specs.
++COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc.br_real
++Target: x86_64-buildroot-linux-musl
++Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp
++Thread model: posix
++Supported LTO compression algorithms: zlib
++gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) 
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=core-avx2'
++ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/cc1 -quiet -v -isysroot /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D _LARGEFILE_SOURCE -D _LARGEFILE64_SOURCE -D _FILE_OFFSET_BITS=64 -D NDEBUG /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o -Os -version -fstack-protector-strong -o /tmp/ccweDjhB.s
++GNU C17 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)
++	compiled by GNU C version 10.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
++GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
++ignoring nonexistent directory "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/local/include"
++#include "..." search starts here:
++#include <...> search starts here:
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include
++ /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include
++End of search list.
++GNU C17 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)
++	compiled by GNU C version 10.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
++GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
++Compiler executable checksum: acd58bc485e6cd38d70157539b2c26dc
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=core-avx2'
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o /tmp/ccweDjhB.s
++GNU assembler version 2.36.1 (x86_64-buildroot-linux-musl) using BFD version (GNU Binutils) 2.36.1
++COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/
++LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=core-avx2'
++Linking C executable cmTC_cce65
++/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cce65.dir/link.txt --verbose=1
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG -static -v CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o -o cmTC_cce65 
++Using built-in specs.
++COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc.br_real
++COLLECT_LTO_WRAPPER=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper
++Target: x86_64-buildroot-linux-musl
++Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp
++Thread model: posix
++Supported LTO compression algorithms: zlib
++gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) 
++COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/
++LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-static' '-v' '-o' 'cmTC_cce65' '-mtune=generic' '-march=core-avx2'
++ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/collect2 -plugin /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/liblto_plugin.so -plugin-opt=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYHOOnZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -m elf_x86_64 -static -o cmTC_cce65 /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crt1.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crti.o /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtbeginT.o -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lc --end-group /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtend.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crtn.o
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-static' '-v' '-o' 'cmTC_cce65' '-mtune=generic' '-march=core-avx2'
++gmake[3]: Leaving directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++gmake[2]: Leaving directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++
++
++
++Parsed C implicit include dir info from above output: rv=done
++  found start of include info
++  found start of implicit include info
++    add: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include]
++    add: [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include]
++    add: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++  end of search list found
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include]
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include]
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include] ==> [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++  implicit include dirs: [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include;/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++
++
++Parsed C implicit link information from above output:
++  link line regex: [^( *|.*[/\])(x86_64-buildroot-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
++  ignore line: [Change Dir: /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp]
++  ignore line: []
++  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cce65/fast && gmake[2]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp']
++  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_cce65.dir/build.make CMakeFiles/cmTC_cce65.dir/build]
++  ignore line: [gmake[3]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp']
++  ignore line: [Building C object CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o]
++  ignore line: [/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG   -v -o CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
++  ignore line: [Using built-in specs.]
++  ignore line: [COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc.br_real]
++  ignore line: [Target: x86_64-buildroot-linux-musl]
++  ignore line: [Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp]
++  ignore line: [Thread model: posix]
++  ignore line: [Supported LTO compression algorithms: zlib]
++  ignore line: [gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) ]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=core-avx2']
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/cc1 -quiet -v -isysroot /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D _LARGEFILE_SOURCE -D _LARGEFILE64_SOURCE -D _FILE_OFFSET_BITS=64 -D NDEBUG /usr/share/cmake/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o -Os -version -fstack-protector-strong -o /tmp/ccweDjhB.s]
++  ignore line: [GNU C17 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)]
++  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
++  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
++  ignore line: [ignoring nonexistent directory "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/local/include"]
++  ignore line: [#include "..." search starts here:]
++  ignore line: [#include <...> search starts here:]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++  ignore line: [End of search list.]
++  ignore line: [GNU C17 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)]
++  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
++  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
++  ignore line: [Compiler executable checksum: acd58bc485e6cd38d70157539b2c26dc]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=core-avx2']
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o /tmp/ccweDjhB.s]
++  ignore line: [GNU assembler version 2.36.1 (x86_64-buildroot-linux-musl) using BFD version (GNU Binutils) 2.36.1]
++  ignore line: [COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/]
++  ignore line: [LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=core-avx2']
++  ignore line: [Linking C executable cmTC_cce65]
++  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cce65.dir/link.txt --verbose=1]
++  ignore line: [/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG -static -v CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o -o cmTC_cce65 ]
++  ignore line: [Using built-in specs.]
++  ignore line: [COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc.br_real]
++  ignore line: [COLLECT_LTO_WRAPPER=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper]
++  ignore line: [Target: x86_64-buildroot-linux-musl]
++  ignore line: [Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp]
++  ignore line: [Thread model: posix]
++  ignore line: [Supported LTO compression algorithms: zlib]
++  ignore line: [gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) ]
++  ignore line: [COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/]
++  ignore line: [LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-D' 'NDEBUG' '-static' '-v' '-o' 'cmTC_cce65' '-mtune=generic' '-march=core-avx2']
++  link line: [ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/collect2 -plugin /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/liblto_plugin.so -plugin-opt=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYHOOnZ.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -m elf_x86_64 -static -o cmTC_cce65 /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crt1.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crti.o /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtbeginT.o -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o --start-group -lgcc -lc --end-group /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtend.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crtn.o]
++    arg [/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/collect2] ==> ignore
++    arg [-plugin] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/liblto_plugin.so] ==> ignore
++    arg [-plugin-opt=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper] ==> ignore
++    arg [-plugin-opt=-fresolution=/tmp/ccYHOOnZ.res] ==> ignore
++    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
++    arg [-plugin-opt=-pass-through=-lc] ==> ignore
++    arg [--sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot] ==> ignore
++    arg [-m] ==> ignore
++    arg [elf_x86_64] ==> ignore
++    arg [-static] ==> ignore
++    arg [-o] ==> ignore
++    arg [cmTC_cce65] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crt1.o] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crti.o] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtbeginT.o] ==> ignore
++    arg [-L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0] ==> dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64] ==> dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib] ==> dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib]
++    arg [CMakeFiles/cmTC_cce65.dir/CMakeCCompilerABI.c.o] ==> ignore
++    arg [--start-group] ==> ignore
++    arg [-lgcc] ==> lib [gcc]
++    arg [-lc] ==> lib [c]
++    arg [--end-group] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtend.o] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crtn.o] ==> ignore
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0] ==> [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib64]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib64]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib]
++  implicit libs: [gcc;c]
++  implicit dirs: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib64;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib64;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib]
++  implicit fwks: []
++
++
++Detecting CXX compiler ABI info compiled with the following output:
++Change Dir: /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp
++
++Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9139/fast && gmake[2]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++/usr/bin/gmake  -f CMakeFiles/cmTC_d9139.dir/build.make CMakeFiles/cmTC_d9139.dir/build
++gmake[3]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++Building CXX object CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++ --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -Os   -static -static -latomic   -DNDEBUG   -v -o CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
++Using built-in specs.
++COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++.br_real
++Target: x86_64-buildroot-linux-musl
++Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp
++Thread model: posix
++Supported LTO compression algorithms: zlib
++gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) 
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=core-avx2'
++ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/cc1plus -quiet -v -isysroot /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_GNU_SOURCE -D _LARGEFILE_SOURCE -D _LARGEFILE64_SOURCE -D _FILE_OFFSET_BITS=64 -D NDEBUG /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -Os -version -fstack-protector-strong -o /tmp/ccRPWRzp.s
++GNU C++14 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)
++	compiled by GNU C version 10.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
++GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
++ignoring nonexistent directory "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/local/include"
++#include "..." search starts here:
++#include <...> search starts here:
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/x86_64-buildroot-linux-musl
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/backward
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include
++ /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include
++End of search list.
++GNU C++14 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)
++	compiled by GNU C version 10.2.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version none
++GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
++Compiler executable checksum: 523bd5a452914d75dd08503422c0ead0
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=core-avx2'
++ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRPWRzp.s
++GNU assembler version 2.36.1 (x86_64-buildroot-linux-musl) using BFD version (GNU Binutils) 2.36.1
++COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/
++LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=core-avx2'
++Linking CXX executable cmTC_d9139
++/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9139.dir/link.txt --verbose=1
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++ --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -Os   -static -static -latomic   -DNDEBUG -static -v CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d9139 
++Using built-in specs.
++COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++.br_real
++COLLECT_LTO_WRAPPER=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper
++Target: x86_64-buildroot-linux-musl
++Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp
++Thread model: posix
++Supported LTO compression algorithms: zlib
++gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) 
++COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/
++LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-static' '-v' '-o' 'cmTC_d9139' '-mtune=generic' '-march=core-avx2'
++ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/collect2 -plugin /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/liblto_plugin.so -plugin-opt=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctP9RyO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -m elf_x86_64 -static -o cmTC_d9139 /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crt1.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crti.o /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtbeginT.o -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib -latomic CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm --start-group -lgcc -lc --end-group /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtend.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crtn.o
++COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-static' '-v' '-o' 'cmTC_d9139' '-mtune=generic' '-march=core-avx2'
++gmake[3]: Leaving directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++gmake[2]: Leaving directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp'
++
++
++
++Parsed CXX implicit include dir info from above output: rv=done
++  found start of include info
++  found start of implicit include info
++    add: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0]
++    add: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/x86_64-buildroot-linux-musl]
++    add: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/backward]
++    add: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include]
++    add: [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include]
++    add: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++  end of search list found
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include/c++/10.3.0]
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/x86_64-buildroot-linux-musl] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include/c++/10.3.0/x86_64-buildroot-linux-musl]
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/backward] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include/c++/10.3.0/backward]
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include]
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include]
++  collapse include dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include] ==> [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++  implicit include dirs: [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include/c++/10.3.0;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include/c++/10.3.0/x86_64-buildroot-linux-musl;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include/c++/10.3.0/backward;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/include;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include;/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++
++
++Parsed CXX implicit link information from above output:
++  link line regex: [^( *|.*[/\])(x86_64-buildroot-linux-musl-ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
++  ignore line: [Change Dir: /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp]
++  ignore line: []
++  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9139/fast && gmake[2]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp']
++  ignore line: [/usr/bin/gmake  -f CMakeFiles/cmTC_d9139.dir/build.make CMakeFiles/cmTC_d9139.dir/build]
++  ignore line: [gmake[3]: Entering directory '/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp']
++  ignore line: [Building CXX object CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o]
++  ignore line: [/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++ --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -Os   -static -static -latomic   -DNDEBUG   -v -o CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
++  ignore line: [Using built-in specs.]
++  ignore line: [COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++.br_real]
++  ignore line: [Target: x86_64-buildroot-linux-musl]
++  ignore line: [Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp]
++  ignore line: [Thread model: posix]
++  ignore line: [Supported LTO compression algorithms: zlib]
++  ignore line: [gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) ]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=core-avx2']
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/cc1plus -quiet -v -isysroot /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_GNU_SOURCE -D _LARGEFILE_SOURCE -D _LARGEFILE64_SOURCE -D _FILE_OFFSET_BITS=64 -D NDEBUG /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=core-avx2 -auxbase-strip CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -Os -version -fstack-protector-strong -o /tmp/ccRPWRzp.s]
++  ignore line: [GNU C++14 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)]
++  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
++  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
++  ignore line: [ignoring nonexistent directory "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/local/include"]
++  ignore line: [#include "..." search starts here:]
++  ignore line: [#include <...> search starts here:]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/x86_64-buildroot-linux-musl]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include/c++/10.3.0/backward]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/include]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/include]
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/include]
++  ignore line: [End of search list.]
++  ignore line: [GNU C++14 (Buildroot 2021.05-2-gc9f113f318-dirty) version 10.3.0 (x86_64-buildroot-linux-musl)]
++  ignore line: [	compiled by GNU C version 10.2.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version none]
++  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
++  ignore line: [Compiler executable checksum: 523bd5a452914d75dd08503422c0ead0]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=core-avx2']
++  ignore line: [ /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/as -v --64 -o CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccRPWRzp.s]
++  ignore line: [GNU assembler version 2.36.1 (x86_64-buildroot-linux-musl) using BFD version (GNU Binutils) 2.36.1]
++  ignore line: [COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/]
++  ignore line: [LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-v' '-o' 'CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-mtune=generic' '-march=core-avx2']
++  ignore line: [Linking CXX executable cmTC_d9139]
++  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9139.dir/link.txt --verbose=1]
++  ignore line: [/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++ --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64  -Os   -static -static -latomic   -DNDEBUG -static -v CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_d9139 ]
++  ignore line: [Using built-in specs.]
++  ignore line: [COLLECT_GCC=/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-g++.br_real]
++  ignore line: [COLLECT_LTO_WRAPPER=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper]
++  ignore line: [Target: x86_64-buildroot-linux-musl]
++  ignore line: [Configured with: ./configure --prefix=/run/media/pqy/sda1/br/kf5/host --sysconfdir=/run/media/pqy/sda1/br/kf5/host/etc --enable-static --target=x86_64-buildroot-linux-musl --with-sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot --enable-__cxa_atexit --with-gnu-ld --disable-libssp --disable-multilib --disable-decimal-float --with-gmp=/run/media/pqy/sda1/br/kf5/host --with-mpc=/run/media/pqy/sda1/br/kf5/host --with-mpfr=/run/media/pqy/sda1/br/kf5/host --with-pkgversion='Buildroot 2021.05-2-gc9f113f318-dirty' --with-bugurl=http://bugs.buildroot.net/ --without-zstd --disable-libmpx --enable-libquadmath --disable-libsanitizer --enable-tls --enable-threads --without-isl --without-cloog --with-arch=core-avx2 --enable-languages=c,c++ --with-build-time-tools=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/bin --disable-shared --disable-libgomp]
++  ignore line: [Thread model: posix]
++  ignore line: [Supported LTO compression algorithms: zlib]
++  ignore line: [gcc version 10.3.0 (Buildroot 2021.05-2-gc9f113f318-dirty) ]
++  ignore line: [COMPILER_PATH=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/bin/]
++  ignore line: [LIBRARY_PATH=/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64/:/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/:/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/]
++  ignore line: [COLLECT_GCC_OPTIONS='-fstack-protector-strong' '-D' '_LARGEFILE_SOURCE' '-D' '_LARGEFILE64_SOURCE' '-D' '_FILE_OFFSET_BITS=64' '-Os' '-static' '-static' '-D' 'NDEBUG' '-static' '-v' '-o' 'cmTC_d9139' '-mtune=generic' '-march=core-avx2']
++  link line: [ /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/collect2 -plugin /run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/liblto_plugin.so -plugin-opt=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cctP9RyO.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -m elf_x86_64 -static -o cmTC_d9139 /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crt1.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crti.o /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtbeginT.o -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64 -L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib -L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib -latomic CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm --start-group -lgcc -lc --end-group /run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtend.o /run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crtn.o]
++    arg [/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/collect2] ==> ignore
++    arg [-plugin] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/liblto_plugin.so] ==> ignore
++    arg [-plugin-opt=/run/media/pqy/sda1/br/kf5/host/libexec/gcc/x86_64-buildroot-linux-musl/10.3.0/lto-wrapper] ==> ignore
++    arg [-plugin-opt=-fresolution=/tmp/cctP9RyO.res] ==> ignore
++    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
++    arg [-plugin-opt=-pass-through=-lc] ==> ignore
++    arg [--sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot] ==> ignore
++    arg [-m] ==> ignore
++    arg [elf_x86_64] ==> ignore
++    arg [-static] ==> ignore
++    arg [-o] ==> ignore
++    arg [cmTC_d9139] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crt1.o] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crti.o] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtbeginT.o] ==> ignore
++    arg [-L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0] ==> dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64] ==> dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib] ==> dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib]
++    arg [-L/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib] ==> dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib]
++    arg [-latomic] ==> lib [atomic]
++    arg [CMakeFiles/cmTC_d9139.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
++    arg [-lstdc++] ==> lib [stdc++]
++    arg [-lm] ==> lib [m]
++    arg [--start-group] ==> ignore
++    arg [-lgcc] ==> lib [gcc]
++    arg [-lc] ==> lib [c]
++    arg [--end-group] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/crtend.o] ==> ignore
++    arg [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64/crtn.o] ==> ignore
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0] ==> [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib/../lib64] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib64]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib/../lib64] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/../lib64] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib64]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0/../../../../x86_64-buildroot-linux-musl/lib] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib]
++  collapse library dir [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib] ==> [/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib]
++  implicit libs: [atomic;stdc++;m;gcc;c]
++  implicit dirs: [/run/media/pqy/sda1/br/kf5/host/lib/gcc/x86_64-buildroot-linux-musl/10.3.0;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib64;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib64;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib64;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/lib;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/lib;/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib]
++  implicit fwks: []
++
++
++Determining if the include file pthread.h exists passed with the following output:
++Change Dir: /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp
++
++Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_563a3/fast && gmake[2]: 进入目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++/usr/bin/gmake  -f CMakeFiles/cmTC_563a3.dir/build.make CMakeFiles/cmTC_563a3.dir/build
++gmake[3]: 进入目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++Building C object CMakeFiles/cmTC_563a3.dir/CheckIncludeFile.c.o
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot   -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG -o CMakeFiles/cmTC_563a3.dir/CheckIncludeFile.c.o -c /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp/CheckIncludeFile.c
++Linking C executable cmTC_563a3
++/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_563a3.dir/link.txt --verbose=1
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG -static  CMakeFiles/cmTC_563a3.dir/CheckIncludeFile.c.o -o cmTC_563a3 
++gmake[3]: 离开目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++gmake[2]: 离开目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++
++
++
++Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
++Change Dir: /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp
++
++Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_66ebd/fast && gmake[2]: 进入目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++/usr/bin/gmake  -f CMakeFiles/cmTC_66ebd.dir/build.make CMakeFiles/cmTC_66ebd.dir/build
++gmake[3]: 进入目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++Building C object CMakeFiles/cmTC_66ebd.dir/src.c.o
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -DCMAKE_HAVE_LIBC_PTHREAD  -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG -o CMakeFiles/cmTC_66ebd.dir/src.c.o -c /run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp/src.c
++Linking C executable cmTC_66ebd
++/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_66ebd.dir/link.txt --verbose=1
++/run/media/pqy/sda1/br/kf5/host/bin/x86_64-buildroot-linux-musl-gcc --sysroot=/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot -D_LARGEFILE_SOURCE -D_LARGEFILE64_SOURCE -D_FILE_OFFSET_BITS=64 -Os -static   -DNDEBUG -static  CMakeFiles/cmTC_66ebd.dir/src.c.o -o cmTC_66ebd 
++gmake[3]: 离开目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++gmake[2]: 离开目录“/run/media/pqy/sda1/br/kf5/build/kf5-kconfigwidgets-5.49.0/CMakeFiles/CMakeTmp”
++
++
++Source file was:
++#include <pthread.h>
++
++static void* test_func(void* data)
++{
++  return data;
++}
++
++int main(void)
++{
++  pthread_t thread;
++  pthread_create(&thread, NULL, test_func, NULL);
++  pthread_detach(thread);
++  pthread_cancel(thread);
++  pthread_join(thread, NULL);
++  pthread_atfork(NULL, NULL, NULL);
++  pthread_exit(NULL);
++
++  return 0;
++}
++
+diff --git a/CMakeFiles/Makefile.cmake b/CMakeFiles/Makefile.cmake
+deleted file mode 100644
+index 19f2b7d..0000000
+--- a/CMakeFiles/Makefile.cmake
++++ /dev/null
+@@ -1,287 +0,0 @@
+-# CMAKE generated file: DO NOT EDIT!
+-# Generated by "Unix Makefiles" Generator, CMake Version 3.20
+-
+-# The generator used is:
+-set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
+-
+-# The top level Makefile was generated from the following files:
+-set(CMAKE_MAKEFILE_DEPENDS
+-  "CMakeCache.txt"
+-  "CMakeFiles/3.20.0/CMakeCCompiler.cmake"
+-  "CMakeFiles/3.20.0/CMakeCXXCompiler.cmake"
+-  "CMakeFiles/3.20.0/CMakeSystem.cmake"
+-  "CMakeLists.txt"
+-  "KF5ConfigWidgetsConfig.cmake.in"
+-  "src/CMakeLists.txt"
+-  "src/kconfigwidgets.qrc"
+-  "/run/media/pqy/sda1/br/kf5/host/share/buildroot/Platform/Buildroot.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/share/buildroot/toolchainfile.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Auth/KF5AuthConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Auth/KF5AuthConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Auth/KF5AuthMacros.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Auth/KF5AuthTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Auth/KF5AuthTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Codecs/KF5CodecsConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Codecs/KF5CodecsConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Codecs/KF5CodecsTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Codecs/KF5CodecsTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config/KF5ConfigCompilerTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config/KF5ConfigCompilerTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config/KF5ConfigConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config/KF5ConfigConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config/KF5ConfigMacros.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config/KF5ConfigTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5Config/KF5ConfigTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsMacros.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsToolingTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5CoreAddons/KF5CoreAddonsToolingTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5GuiAddons/KF5GuiAddonsTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5I18n/KF5I18nConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5I18n/KF5I18nConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5I18n/KF5I18nMacros.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5I18n/KF5I18nTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5I18n/KF5I18nTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5WidgetsAddons/KF5WidgetsAddonsConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5WidgetsAddons/KF5WidgetsAddonsConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5WidgetsAddons/KF5WidgetsAddonsTargets-release.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/KF5WidgetsAddons/KF5WidgetsAddonsTargets.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5/Qt5Config.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5/Qt5ConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5/Qt5ModuleLocation.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Core/Qt5CoreConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Core/Qt5CoreMacros.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5DBus/Qt5DBusConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5DBus/Qt5DBusConfigExtras.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5DBus/Qt5DBusConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5DBus/Qt5DBusMacros.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5DeviceDiscoverySupport/Qt5DeviceDiscoverySupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5EdidSupport/Qt5EdidSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5EdidSupport/Qt5EdidSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5EventDispatcherSupport/Qt5EventDispatcherSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5EventDispatcherSupport/Qt5EventDispatcherSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5FbSupport/Qt5FbSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5FbSupport/Qt5FbSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5FontDatabaseSupport/Qt5FontDatabaseSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5InputSupport/Qt5InputSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5InputSupport/Qt5InputSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Network/Qt5Network_QConnmanEnginePlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Network/Qt5Network_QNetworkManagerEnginePlugin.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5ServiceSupport/Qt5ServiceSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5ServiceSupport/Qt5ServiceSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Svg/Qt5SvgConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5ThemeSupport/Qt5ThemeSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5ThemeSupport/Qt5ThemeSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5XcbQpa/Qt5XcbQpaConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5XcbQpa/Qt5XcbQpaConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5XkbCommonSupport/Qt5XkbCommonSupportConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5XkbCommonSupport/Qt5XkbCommonSupportConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Xml/Qt5XmlConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/lib/cmake/Qt5Xml/Qt5XmlConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/cmake/ECMConfig.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/cmake/ECMConfigVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/find-modules/FindPythonModuleGeneration.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/kde-modules/KDECMakeSettings.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/kde-modules/KDECompilerSettings.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/kde-modules/KDEFrameworkCompilerSettings.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/kde-modules/KDEInstallDirs.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/kde-modules/prefix.sh.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMAddQch.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMCoverageOption.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMEnableSanitizers.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMGenerateHeaders.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMGeneratePriFile.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMQtDeclareLoggingCategory.cpp.in"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMQtDeclareLoggingCategory.h.in"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMQueryQmake.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMSetupVersion.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMSourceVersionControl.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMUninstallTarget.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMUseFindModules.cmake"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ECMVersionHeader.h.in"
+-  "/run/media/pqy/sda1/br/kf5/host/x86_64-buildroot-linux-musl/sysroot/usr/share/ECM/modules/ecm_uninstall.cmake.in"
+-  "/usr/share/cmake/Modules/BasicConfigVersion-AnyNewerVersion.cmake.in"
+-  "/usr/share/cmake/Modules/CMakeCCompiler.cmake.in"
+-  "/usr/share/cmake/Modules/CMakeCCompilerABI.c"
+-  "/usr/share/cmake/Modules/CMakeCInformation.cmake"
+-  "/usr/share/cmake/Modules/CMakeCXXCompiler.cmake.in"
+-  "/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
+-  "/usr/share/cmake/Modules/CMakeCXXInformation.cmake"
+-  "/usr/share/cmake/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake"
+-  "/usr/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
+-  "/usr/share/cmake/Modules/CMakeCompilerIdDetection.cmake"
+-  "/usr/share/cmake/Modules/CMakeConfigurableFile.in"
+-  "/usr/share/cmake/Modules/CMakeDetermineCCompiler.cmake"
+-  "/usr/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake"
+-  "/usr/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake"
+-  "/usr/share/cmake/Modules/CMakeDetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/CMakeDetermineCompilerABI.cmake"
+-  "/usr/share/cmake/Modules/CMakeDetermineCompilerId.cmake"
+-  "/usr/share/cmake/Modules/CMakeDetermineSystem.cmake"
+-  "/usr/share/cmake/Modules/CMakeFindBinUtils.cmake"
+-  "/usr/share/cmake/Modules/CMakeFindDependencyMacro.cmake"
+-  "/usr/share/cmake/Modules/CMakeGenericSystem.cmake"
+-  "/usr/share/cmake/Modules/CMakeInitializeConfigs.cmake"
+-  "/usr/share/cmake/Modules/CMakeLanguageInformation.cmake"
+-  "/usr/share/cmake/Modules/CMakePackageConfigHelpers.cmake"
+-  "/usr/share/cmake/Modules/CMakeParseArguments.cmake"
+-  "/usr/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake"
+-  "/usr/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake"
+-  "/usr/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake"
+-  "/usr/share/cmake/Modules/CMakeSystem.cmake.in"
+-  "/usr/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
+-  "/usr/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
+-  "/usr/share/cmake/Modules/CMakeTestCCompiler.cmake"
+-  "/usr/share/cmake/Modules/CMakeTestCXXCompiler.cmake"
+-  "/usr/share/cmake/Modules/CMakeTestCompilerCommon.cmake"
+-  "/usr/share/cmake/Modules/CMakeUnixFindMake.cmake"
+-  "/usr/share/cmake/Modules/CheckCCompilerFlag.cmake"
+-  "/usr/share/cmake/Modules/CheckCSourceCompiles.cmake"
+-  "/usr/share/cmake/Modules/CheckCXXCompilerFlag.cmake"
+-  "/usr/share/cmake/Modules/CheckCXXSourceCompiles.cmake"
+-  "/usr/share/cmake/Modules/CheckIncludeFile.c.in"
+-  "/usr/share/cmake/Modules/CheckIncludeFile.cmake"
+-  "/usr/share/cmake/Modules/CheckLibraryExists.cmake"
+-  "/usr/share/cmake/Modules/CheckSymbolExists.cmake"
+-  "/usr/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/GNU-C.cmake"
+-  "/usr/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/GNU-CXX.cmake"
+-  "/usr/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake"
+-  "/usr/share/cmake/Modules/Compiler/GNU.cmake"
+-  "/usr/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake"
+-  "/usr/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake"
+-  "/usr/share/cmake/Modules/FeatureSummary.cmake"
+-  "/usr/share/cmake/Modules/FindGettext.cmake"
+-  "/usr/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
+-  "/usr/share/cmake/Modules/FindPackageMessage.cmake"
+-  "/usr/share/cmake/Modules/FindThreads.cmake"
+-  "/usr/share/cmake/Modules/GenerateExportHeader.cmake"
+-  "/usr/share/cmake/Modules/Internal/CheckCompilerFlag.cmake"
+-  "/usr/share/cmake/Modules/Internal/CheckSourceCompiles.cmake"
+-  "/usr/share/cmake/Modules/Internal/FeatureTesting.cmake"
+-  "/usr/share/cmake/Modules/MacroAddFileDependencies.cmake"
+-  "/usr/share/cmake/Modules/Platform/Linux.cmake"
+-  "/usr/share/cmake/Modules/Platform/UnixPaths.cmake"
+-  "/usr/share/cmake/Modules/WriteBasicConfigVersionFile.cmake"
+-  "/usr/share/cmake/Modules/exportheader.cmake.in"
+-  )
+-
+-# The corresponding makefile is:
+-set(CMAKE_MAKEFILE_OUTPUTS
+-  "Makefile"
+-  "CMakeFiles/cmake.check_cache"
+-  )
+-
+-# Byproducts of CMake generate step:
+-set(CMAKE_MAKEFILE_PRODUCTS
+-  "CMakeFiles/3.20.0/CMakeSystem.cmake"
+-  "CMakeFiles/3.20.0/CMakeCCompiler.cmake"
+-  "CMakeFiles/3.20.0/CMakeCXXCompiler.cmake"
+-  "CMakeFiles/3.20.0/CMakeCCompiler.cmake"
+-  "CMakeFiles/3.20.0/CMakeCXXCompiler.cmake"
+-  "prefix.sh"
+-  "ecm_uninstall.cmake"
+-  "kconfigwidgets_version.h"
+-  "KF5ConfigWidgetsConfigVersion.cmake"
+-  "KF5ConfigWidgetsConfig.cmake"
+-  "CMakeFiles/CMakeDirectoryInformation.cmake"
+-  "src/kconfigwidgets_debug.cpp"
+-  "src/kconfigwidgets_debug.h"
+-  "src/kconfigwidgets.qrc.depends"
+-  "src/kconfigwidgets_export.h"
+-  "src/CMakeFiles/KF5ConfigWidgets_autogen.dir/AutogenInfo.json"
+-  "src/qt_KConfigWidgets.pri"
+-  "src/CMakeFiles/CMakeDirectoryInformation.cmake"
+-  )
+-
+-# Dependency information for all targets:
+-set(CMAKE_DEPEND_INFO_FILES
+-  "CMakeFiles/tsfiles.dir/DependInfo.cmake"
+-  "CMakeFiles/pofiles.dir/DependInfo.cmake"
+-  "CMakeFiles/tsfiles-5c5cbdd6a85ace8614212536d3350bf9.dir/DependInfo.cmake"
+-  "CMakeFiles/pofiles-5c5cbdd6a85ace8614212536d3350bf9.dir/DependInfo.cmake"
+-  "CMakeFiles/uninstall.dir/DependInfo.cmake"
+-  "src/CMakeFiles/KF5ConfigWidgets.dir/DependInfo.cmake"
+-  "src/CMakeFiles/KF5ConfigWidgets_autogen.dir/DependInfo.cmake"
+-  )
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index f458a6b..0c20bf0 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -12,7 +12,7 @@ feature_summary(WHAT REQUIRED_PACKAGES_NOT_FOUND FATAL_ON_MISSING_REQUIRED_PACKA
+ set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH} ${ECM_KDE_MODULE_DIR})
+ 
+ set(REQUIRED_QT_VERSION 5.8.0)
+-find_package(Qt5 "${REQUIRED_QT_VERSION}" CONFIG REQUIRED Widgets DBus)
++find_package(Qt5 "${REQUIRED_QT_VERSION}" CONFIG REQUIRED Widgets DBus X11Extras)
+ include(KDEInstallDirs)
+ include(KDEFrameworkCompilerSettings NO_POLICY_SCOPE)
+ include(KDECMakeSettings)

@@ -1,0 +1,13 @@
+diff --git a/src/imports/CMakeLists.txt b/src/imports/CMakeLists.txt
+index d0a4a7b..8e2a701 100644
+--- a/src/imports/CMakeLists.txt
++++ b/src/imports/CMakeLists.txt
+@@ -18,7 +18,7 @@ set(solidextensionplugin_SRCS
+     devices.cpp
+     )
+ 
+-add_library(solidextensionplugin SHARED ${solidextensionplugin_SRCS})
++add_library(solidextensionplugin STATIC ${solidextensionplugin_SRCS})
+ 
+ target_link_libraries(
+     solidextensionplugin

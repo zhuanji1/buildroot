@@ -1,6 +1,8 @@
 config BR2_PACKAGE_KF5_KBOOKMARKS
 	bool "kf5-kbookmarks"
 	select BR2_PACKAGE_KF5_EXTRA_CMAKE_MODULES
+	select BR2_PACKAGE_KF5_KICONTHEMES
+	select BR2_PACKAGE_KF5_KXMLGUI
 	help
 	  KF5 is a set of Qt framework addons, extending Qt in
 	  various ways, not only restricted in helping integration

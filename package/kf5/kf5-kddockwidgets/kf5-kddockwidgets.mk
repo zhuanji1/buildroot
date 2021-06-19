@@ -19,7 +19,7 @@ ifeq ($(BR2_TOOLCHAIN_HAS_LIBATOMIC),y)
 KF5_KDDOCKWIDGETS_CXXFLAGS += -latomic
 endif
 
-KF5_KDDOCKWIDGETS_CONF_OPTS = -DCMAKE_CXX_FLAGS="$(KF5_KDDOCKWIDGETS_CXXFLAGS)"
+KF5_KDDOCKWIDGETS_CONF_OPTS = -DCMAKE_CXX_FLAGS="$(KF5_KDDOCKWIDGETS_CXXFLAGS)" -DKDDockWidgets_LIBRARY_MODE=STATIC
 
 ifeq ($(BR2_microblaze),y)
 # Microblaze ld emits warnings, make warnings not to be treated as errors

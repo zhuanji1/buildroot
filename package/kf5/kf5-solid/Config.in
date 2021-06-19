@@ -1,9 +1,8 @@
-config BR2_PACKAGE_KF5_KTEXTWIDGETS
-	bool "kf5-ktextwidgets"
+config BR2_PACKAGE_KF5_SOLID
+	bool "kf5-solid"
 	select BR2_PACKAGE_KF5_EXTRA_CMAKE_MODULES
-	select BR2_PACKAGE_KF5_KCOMPLETION
-	select BR2_PACKAGE_KF5_KSERVICE
-	select BR2_PACKAGE_KF5_SONNET
+	select BR2_PACKAGE_UTIL_LINUX_LIBS
+	select BR2_PACKAGE_EUDEV
 	help
 	  KF5 is a set of Qt framework addons, extending Qt in
 	  various ways, not only restricted in helping integration

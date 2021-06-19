@@ -1,0 +1,142 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 02b763f..57b4c24 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -58,6 +58,10 @@ find_package(KF5ItemViews ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5JobWidgets ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5WidgetsAddons ${KF5_DEP_VERSION} REQUIRED)
+ find_package(KF5WindowSystem ${KF5_DEP_VERSION} REQUIRED)
++find_package(KF5GuiAddons ${KF5_DEP_VERSION} REQUIRED)
++find_package(KF5GlobalAccel ${KF5_DEP_VERSION} REQUIRED)
++find_package(KF5TextWidgets ${KF5_DEP_VERSION} REQUIRED)
++find_package(KF5XmlGui ${KF5_DEP_VERSION} REQUIRED)
+ endif()
+ 
+ if (UNIX)
+@@ -75,7 +79,7 @@ remove_definitions(-DQT_NO_CAST_FROM_ASCII)
+ remove_definitions(-DQT_NO_CAST_FROM_BYTEARRAY)
+ 
+ set(REQUIRED_QT_VERSION 5.8.0)
+-find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Widgets DBus Network Concurrent Xml Test)
++find_package(Qt5 ${REQUIRED_QT_VERSION} CONFIG REQUIRED Widgets DBus Network Concurrent Xml Test PrintSupport)
+ 
+ find_package(GSSAPI)
+ set_package_properties(GSSAPI PROPERTIES DESCRIPTION "Allows KIO to make use of certain HTTP authentication services"
+diff --git a/src/ioslaves/file/CMakeLists.txt b/src/ioslaves/file/CMakeLists.txt
+index 9ab8ea3..a2ea9f4 100644
+--- a/src/ioslaves/file/CMakeLists.txt
++++ b/src/ioslaves/file/CMakeLists.txt
+@@ -22,7 +22,7 @@ check_include_files(sys/xattr.h HAVE_SYS_XATTR_H)
+ 
+ configure_file(config-kioslave-file.h.cmake ${CMAKE_CURRENT_BINARY_DIR}/config-kioslave-file.h )
+ 
+-add_library(kio_file MODULE ${kio_file_PART_SRCS})
++add_library(kio_file STATIC ${kio_file_PART_SRCS})
+ target_link_libraries(kio_file KF5::KIOCore KF5::I18n Qt5::DBus Qt5::Network)
+ 
+ if(UNIX)
+diff --git a/src/ioslaves/ftp/CMakeLists.txt b/src/ioslaves/ftp/CMakeLists.txt
+index 8743a30..abecdb0 100644
+--- a/src/ioslaves/ftp/CMakeLists.txt
++++ b/src/ioslaves/ftp/CMakeLists.txt
+@@ -13,7 +13,7 @@ ftp.cpp
+ )
+ 
+ 
+-add_library(kio_ftp MODULE ${kio_ftp_PART_SRCS})
++add_library(kio_ftp STATIC ${kio_ftp_PART_SRCS})
+ target_link_libraries(kio_ftp Qt5::Network KF5::KIOCore KF5::I18n)
+ 
+ set_target_properties(kio_ftp PROPERTIES OUTPUT_NAME "ftp")
+diff --git a/src/ioslaves/help/CMakeLists.txt b/src/ioslaves/help/CMakeLists.txt
+index 77714bb..edf9bce 100644
+--- a/src/ioslaves/help/CMakeLists.txt
++++ b/src/ioslaves/help/CMakeLists.txt
+@@ -42,7 +42,7 @@ set(kio_help_PART_SRCS
+ )
+ 
+ 
+-add_library(kio_help MODULE ${kio_help_PART_SRCS})
++add_library(kio_help STATIC ${kio_help_PART_SRCS})
+ 
+ target_link_libraries(kio_help
+    Qt5::Gui # QTextDocument
+@@ -66,7 +66,7 @@ install(TARGETS kio_help  DESTINATION ${KDE_INSTALL_PLUGINDIR}/kf5/kio)
+ set(kio_ghelp_PART_SRCS kio_help.cpp main_ghelp.cpp xslt_help.cpp)
+ 
+ 
+-add_library(kio_ghelp MODULE ${kio_ghelp_PART_SRCS})
++add_library(kio_ghelp STATIC ${kio_ghelp_PART_SRCS})
+ 
+ target_link_libraries(kio_ghelp
+    Qt5::Gui # QTextDocument
+diff --git a/src/ioslaves/http/CMakeLists.txt b/src/ioslaves/http/CMakeLists.txt
+index 3ae45a2..f14c904 100644
+--- a/src/ioslaves/http/CMakeLists.txt
++++ b/src/ioslaves/http/CMakeLists.txt
+@@ -65,7 +65,7 @@ set(kio_http_PART_SRCS
+    )
+ 
+ 
+-add_library(kio_http MODULE ${kio_http_PART_SRCS})
++add_library(kio_http STATIC ${kio_http_PART_SRCS})
+ 
+ target_link_libraries(kio_http
+    Qt5::DBus
+diff --git a/src/ioslaves/remote/kdedmodule/CMakeLists.txt b/src/ioslaves/remote/kdedmodule/CMakeLists.txt
+index 4e40d21..1eb2b2c 100644
+--- a/src/ioslaves/remote/kdedmodule/CMakeLists.txt
++++ b/src/ioslaves/remote/kdedmodule/CMakeLists.txt
+@@ -1,4 +1,4 @@
+-add_library(remotedirnotify MODULE remotedirnotify.cpp remotedirnotifymodule.cpp ../debug.cpp)
++add_library(remotedirnotify STATIC remotedirnotify.cpp remotedirnotifymodule.cpp ../debug.cpp)
+ kcoreaddons_desktop_to_json(remotedirnotify remotedirnotify.desktop)
+ 
+ target_link_libraries(remotedirnotify KF5::DBusAddons KF5::KIOCore)
+diff --git a/src/ioslaves/trash/CMakeLists.txt b/src/ioslaves/trash/CMakeLists.txt
+index 549c4ba..852620c 100644
+--- a/src/ioslaves/trash/CMakeLists.txt
++++ b/src/ioslaves/trash/CMakeLists.txt
+@@ -30,7 +30,7 @@ else()
+     )
+   set(kio_trash_PART_SRCS kio_trash.cpp ${trashcommon_unix_SRCS} ${kio_trash_PART_DEBUG_SRCS})
+ endif()
+-add_library(kio_trash MODULE ${kio_trash_PART_SRCS})
++add_library(kio_trash STATIC ${kio_trash_PART_SRCS})
+ 
+ target_link_libraries(kio_trash
+   KF5::Solid
+@@ -68,7 +68,7 @@ install(TARGETS ktrash5 ${KF5_INSTALL_TARGETS_DEFAULT_ARGS})
+ # currently not on win32, TODO!
+ if(NOT WIN32 AND NOT KIOCORE_ONLY)
+     set(kcm_trash_PART_SRCS kcmtrash.cpp ${trashcommon_unix_SRCS} ${kio_trash_PART_DEBUG_SRCS})
+-    add_library(kcm_trash MODULE ${kcm_trash_PART_SRCS})
++    add_library(kcm_trash STATIC ${kcm_trash_PART_SRCS})
+     target_link_libraries(kcm_trash
+        Qt5::DBus
+        KF5::I18n
+diff --git a/src/kcms/kio/CMakeLists.txt b/src/kcms/kio/CMakeLists.txt
+index 3bb827f..ea05253 100644
+--- a/src/kcms/kio/CMakeLists.txt
++++ b/src/kcms/kio/CMakeLists.txt
+@@ -29,7 +29,7 @@ ki18n_wrap_ui(kcm_kio_PART_SRCS
+     kcookiesmanagement.ui
+     kcookiespolicyselectiondlg.ui)
+ 
+-add_library(kcm_kio MODULE ${kcm_kio_PART_SRCS})
++add_library(kcm_kio STATIC ${kcm_kio_PART_SRCS})
+ 
+ target_link_libraries(kcm_kio
+   PUBLIC
+diff --git a/src/kcms/webshortcuts/CMakeLists.txt b/src/kcms/webshortcuts/CMakeLists.txt
+index e00c325..96e1647 100644
+--- a/src/kcms/webshortcuts/CMakeLists.txt
++++ b/src/kcms/webshortcuts/CMakeLists.txt
+@@ -1,6 +1,6 @@
+ set(kcm_webshortcuts_PART_SRCS main.cpp )
+ 
+-add_library(kcm_webshortcuts MODULE ${kcm_webshortcuts_PART_SRCS})
++add_library(kcm_webshortcuts STATIC ${kcm_webshortcuts_PART_SRCS})
+ 
+ target_link_libraries(kcm_webshortcuts
+   PUBLIC

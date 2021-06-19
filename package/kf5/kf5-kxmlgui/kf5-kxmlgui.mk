@@ -10,7 +10,7 @@ KF5_KXMLGUI_SOURCE = kxmlgui-$(KF5_KXMLGUI_VERSION).tar.xz
 KF5_KXMLGUI_LICENSE = LGPL-2.1
 KF5_KXMLGUI_LICENSE_FILES = COPYING.LIB
 
-KF5_KXMLGUI_DEPENDENCIES = kf5-extra-cmake-modules
+KF5_KXMLGUI_DEPENDENCIES = kf5-extra-cmake-modules kf5-ktextwidgets kf5-kglobalaccel openssl kf5-kcompletion kf5-kguiaddons kf5-karchive kf5-kservice kf5-kdbusaddons
 KF5_KXMLGUI_INSTALL_STAGING = YES
 
 KF5_KXMLGUI_CXXFLAGS = $(TARGET_CXXFLAGS)
