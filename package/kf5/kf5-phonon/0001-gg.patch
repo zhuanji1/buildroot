@@ -1,0 +1,65 @@
+diff --git a/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononExperimentalTargets.cmake b/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononExperimentalTargets.cmake
+index d3b6006..f72bfcc 100644
+--- a/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononExperimentalTargets.cmake
++++ b/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononExperimentalTargets.cmake
+@@ -60,7 +60,7 @@ if(_IMPORT_PREFIX STREQUAL "/")
+ endif()
+ 
+ # Create imported target Phonon::phonon4qt5experimental
+-add_library(Phonon::phonon4qt5experimental SHARED IMPORTED)
++add_library(Phonon::phonon4qt5experimental STATIC IMPORTED)
+ 
+ set_target_properties(Phonon::phonon4qt5experimental PROPERTIES
+   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/phonon4qt5;${_IMPORT_PREFIX}/include"
+diff --git a/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononTargets.cmake b/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononTargets.cmake
+index 5ba747c..2b125bf 100644
+--- a/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononTargets.cmake
++++ b/CMakeFiles/Export/lib/cmake/phonon4qt5/PhononTargets.cmake
+@@ -60,7 +60,7 @@ if(_IMPORT_PREFIX STREQUAL "/")
+ endif()
+ 
+ # Create imported target Phonon::phonon4qt5
+-add_library(Phonon::phonon4qt5 SHARED IMPORTED)
++add_library(Phonon::phonon4qt5 STATIC IMPORTED)
+ 
+ set_target_properties(Phonon::phonon4qt5 PROPERTIES
+   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/phonon4qt5;${_IMPORT_PREFIX}/include"
+diff --git a/designer/CMakeLists.txt b/designer/CMakeLists.txt
+index 38956b8..a05fab0 100644
+--- a/designer/CMakeLists.txt
++++ b/designer/CMakeLists.txt
+@@ -8,7 +8,7 @@ set(phononwidgetsplugin_SRCS
+ )
+ qt5_add_resources(phononwidgetsplugin_SRCS phononwidgets.qrc)
+ 
+-add_library(phononwidgets MODULE ${phononwidgetsplugin_SRCS})
++add_library(phononwidgets STATIC ${phononwidgetsplugin_SRCS})
+ 
+ # Techincally since 5.9 we should only need uiplugins and not designer,
+ # in the interest of simplicity we still look for and use the designer
+diff --git a/phonon/CMakeLists.txt b/phonon/CMakeLists.txt
+index b706057..532492b 100644
+--- a/phonon/CMakeLists.txt
++++ b/phonon/CMakeLists.txt
+@@ -84,7 +84,7 @@ if(PHONON_PULSESUPPORT)
+     list(APPEND optional_link_libraries ${GOBJECT_LIBRARIES} ${PULSEAUDIO_LIBRARY} ${PULSEAUDIO_MAINLOOP_LIBRARY})
+ endif()
+ 
+-add_library(${PHONON_LIB_SONAME} SHARED ${phonon_LIB_SRCS})
++add_library(${PHONON_LIB_SONAME} STATIC ${phonon_LIB_SRCS})
+ add_library(Phonon::${PHONON_LIB_SONAME} ALIAS ${PHONON_LIB_SONAME})
+ 
+ target_link_libraries(${PHONON_LIB_SONAME}
+diff --git a/phonon/experimental/CMakeLists.txt b/phonon/experimental/CMakeLists.txt
+index 8814144..bcdc322 100644
+--- a/phonon/experimental/CMakeLists.txt
++++ b/phonon/experimental/CMakeLists.txt
+@@ -20,7 +20,7 @@ set(phononexperimental_LIB_SRCS
+     ../abstractvideooutput_p.cpp
+    )
+ 
+-add_library(${PHONON_LIB_SONAME}experimental SHARED ${phononexperimental_LIB_SRCS})
++add_library(${PHONON_LIB_SONAME}experimental STATIC ${phononexperimental_LIB_SRCS})
+ target_link_libraries(${PHONON_LIB_SONAME}experimental
+     PUBLIC
+         Qt5::Core
