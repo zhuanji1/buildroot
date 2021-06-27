@@ -11,4 +11,11 @@ QT5SVG_INSTALL_STAGING = YES
 QT5SVG_LICENSE = GPL-2.0+ or LGPL-3.0, GPL-3.0 with exception(tools), GFDL-1.3 (docs)
 QT5SVG_LICENSE_FILES = LICENSE.GPL2 LICENSE.GPLv3 LICENSE.LGPLv3 LICENSE.FDL
 
+define QT5SVG_FIXUP
+       sed -e "s|@@HOST_DIR@@|$(HOST_DIR)|" -e "s|@@STAGING_DIR@@|$(STAGING_DIR)|" \
+		 $(QT5BASE_PKGDIR)/qt.conf.in > $(HOST_DIR)/bin/qt.conf
+endef
+
+QT5SVG_PRE_CONFIGURE_HOOKS += QT5SVG_FIXUP
+
 $(eval $(qmake-package))
