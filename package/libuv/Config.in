@@ -2,7 +2,7 @@ config BR2_PACKAGE_LIBUV
 	bool "libuv"
 	depends on BR2_TOOLCHAIN_HAS_THREADS_NPTL # pthread_barrier_*
 	depends on BR2_USE_MMU # fork()
-	depends on !BR2_STATIC_LIBS
+	#depends on !BR2_STATIC_LIBS
 	depends on BR2_TOOLCHAIN_HAS_SYNC_4
 	help
 	  libuv is a multi-platform support library with a focus
