@@ -1,0 +1,13 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index df5533a..e9b9cfc 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -19,7 +19,7 @@ add_subdirectory(filewidgets)
+ 
+ if(NOT WIN32 AND NOT ANDROID)
+   # arpa/nameser.h
+-  add_subdirectory(kpac)
++#  add_subdirectory(kpac)
+ endif()
+ 
+ set(NON_KIOCORE_LINK_QCHS

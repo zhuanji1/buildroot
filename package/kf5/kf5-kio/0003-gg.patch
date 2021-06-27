@@ -1,0 +1,14 @@
+diff --git a/src/ioslaves/CMakeLists.txt b/src/ioslaves/CMakeLists.txt
+index e0536e7..c928c84 100644
+--- a/src/ioslaves/CMakeLists.txt
++++ b/src/ioslaves/CMakeLists.txt
+@@ -4,7 +4,7 @@ add_subdirectory( help )
+ add_subdirectory( http )
+ add_subdirectory( ftp )
+ add_subdirectory( telnet )
+-add_subdirectory( trash )
+-add_subdirectory( remote )
++#add_subdirectory( trash )
++#add_subdirectory( remote )
+ add_subdirectory( protocols )
+ 

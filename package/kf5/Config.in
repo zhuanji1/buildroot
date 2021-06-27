@@ -8,6 +8,7 @@ menuconfig BR2_PACKAGE_KF5
 	  https://techbase.kde.org/KDE_Frameworks
 
 if BR2_PACKAGE_KF5
+source "package/kf5/kf5-elfutils-minimal/Config.in"
 source "package/kf5/kf5-extra-cmake-modules/Config.in"
 source "package/kf5/kf5-karchive/Config.in"
 source "package/kf5/kf5-kauth/Config.in"
@@ -30,14 +31,14 @@ source "package/kf5/kf5-kitemviews/Config.in"
 source "package/kf5/kf5-kjobwidgets/Config.in"
 source "package/kf5/kf5-knotifications/Config.in"
 source "package/kf5/kf5-kservice/Config.in"
-source "package/kf5/kf5-phonon/Config.in"
-source "package/kf5/kf5-solid/Config.in"
-source "package/kf5/kf5-sonnet/Config.in"
-source "package/kf5/kf5-threadweaver/Config.in"
 source "package/kf5/kf5-ktextwidgets/Config.in"
 source "package/kf5/kf5-kwidgetsaddons/Config.in"
 source "package/kf5/kf5-kwindowsystem/Config.in"
 source "package/kf5/kf5-kxmlgui/Config.in"
 source "package/kf5/kf5-modemmanager-qt/Config.in"
 source "package/kf5/kf5-networkmanager-qt/Config.in"
+source "package/kf5/kf5-phonon/Config.in"
+source "package/kf5/kf5-solid/Config.in"
+source "package/kf5/kf5-sonnet/Config.in"
+source "package/kf5/kf5-threadweaver/Config.in"
 endif

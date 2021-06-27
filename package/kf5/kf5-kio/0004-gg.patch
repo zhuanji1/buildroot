@@ -1,0 +1,29 @@
+diff --git a/src/CMakeLists.txt b/src/CMakeLists.txt
+index c228e40..1732e8b 100644
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -4,18 +4,18 @@ add_subdirectory(core)
+ add_subdirectory(protocoltojson)
+ add_subdirectory(kntlm)
+ add_subdirectory(ioslaves)
+-add_subdirectory(kiod)
+-add_subdirectory(kssld)
++#add_subdirectory(kiod)
++#add_subdirectory(kssld)
+ add_subdirectory(kioslave)
+ 
+ if (NOT KIOCORE_ONLY)
+-add_subdirectory(kpasswdserver)
++#add_subdirectory(kpasswdserver)
+ add_subdirectory(gui)
+ add_subdirectory(widgets)
+ add_subdirectory(filewidgets)
+-add_subdirectory(kioexec)
++#add_subdirectory(kioexec)
+-add_subdirectory(urifilters)
+-add_subdirectory(kcms)
++#add_subdirectory(urifilters)
++#add_subdirectory(kcms)
+ 
+ if(NOT WIN32 AND NOT ANDROID)
+   # arpa/nameser.h

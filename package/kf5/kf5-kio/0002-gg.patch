@@ -1,0 +1,17 @@
+diff --git a/src/ioslaves/http/CMakeLists.txt b/src/ioslaves/http/CMakeLists.txt
+index f14c904..6a6f6b8 100644
+--- a/src/ioslaves/http/CMakeLists.txt
++++ b/src/ioslaves/http/CMakeLists.txt
+@@ -29,9 +29,9 @@ include_directories(${ZLIB_INCLUDE_DIR})
+ 
+ remove_definitions(-DQT_NO_CAST_FROM_ASCII)
+ 
+-if (NOT KIOCORE_ONLY)
+-add_subdirectory( kcookiejar )
+-endif()
++#if (NOT KIOCORE_ONLY)
++#add_subdirectory( kcookiejar )
++#endif()
+ 
+ ########### next target ###############
+ 

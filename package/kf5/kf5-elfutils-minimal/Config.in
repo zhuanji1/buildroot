@@ -1,0 +1,10 @@
+config BR2_PACKAGE_KF5_ELFUTILS_MINIMAL
+	bool "kf5-elfutils-minimal"
+	select BR2_PACKAGE_BZIP2
+	select BR2_PACKAGE_XZ
+	select BR2_PACKAGE_ZSTD
+	help
+	  KF5 is a set of Qt framework addons, extending Qt in
+	  various ways, not only restricted in helping integration
+	  in KDE.
+
