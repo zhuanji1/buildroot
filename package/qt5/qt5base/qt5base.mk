@@ -27,7 +27,8 @@ QT5BASE_CONFIGURE_OPTS += \
 	-system-zlib \
 	-system-pcre \
 	-no-pch \
-	-no-feature-relocatable
+	-no-feature-relocatable \
+	QMAKE_LIBS_OPENSSL="-lssl -lcrypto -lz"
 
 ifeq ($(BR2_STATIC_LIBS),y)
   QT5BASE_CONFIGURE_OPTS += -static 
@@ -210,7 +211,7 @@ else
 QT5BASE_CONFIGURE_OPTS += -no-eglfs
 endif
 
-QT5BASE_CONFIGURE_OPTS += $(if $(BR2_PACKAGE_OPENSSL),-openssl,-no-openssl)
+QT5BASE_CONFIGURE_OPTS += $(if $(BR2_PACKAGE_OPENSSL),-ssl -openssl -openssl-linked,-no-openssl)
 QT5BASE_DEPENDENCIES   += $(if $(BR2_PACKAGE_OPENSSL),openssl)
 
 QT5BASE_CONFIGURE_OPTS += $(if $(BR2_PACKAGE_QT5BASE_FONTCONFIG),-fontconfig,-no-fontconfig)
