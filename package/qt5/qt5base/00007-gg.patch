@@ -1,0 +1,26 @@
+diff --git a/src/corelib/text/qbytearraymatcher.h b/src/corelib/text/qbytearraymatcher.h
+index 0eedfc1d..b7fd0a5f 100644
+--- a/src/corelib/text/qbytearraymatcher.h
++++ b/src/corelib/text/qbytearraymatcher.h
+@@ -41,7 +41,7 @@
+ #define QBYTEARRAYMATCHER_H
+ 
+ #include <QtCore/qbytearray.h>
+-
++#include <limits>
+ QT_BEGIN_NAMESPACE
+ 
+ 
+diff --git a/src/corelib/tools/qoffsetstringarray_p.h b/src/corelib/tools/qoffsetstringarray_p.h
+index 4dd9e960..4f61360c 100644
+--- a/src/corelib/tools/qoffsetstringarray_p.h
++++ b/src/corelib/tools/qoffsetstringarray_p.h
+@@ -55,7 +55,7 @@
+ 
+ #include <tuple>
+ #include <array>
+-
++#include <limits>
+ QT_BEGIN_NAMESPACE
+ 
+ namespace QtPrivate {
